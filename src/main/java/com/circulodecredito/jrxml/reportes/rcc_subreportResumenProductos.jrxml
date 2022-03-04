@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rcc_subreportResumenProductos" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="585cc6ef-5e61-4dc1-b0ab-f3caad02991a">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Tit-4" mode="Opaque" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="SansSerif" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Consult-1" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<bottomPen lineWidth="0.25" lineColor="#BFBFBF"/>
+		</box>
+		<paragraph leftIndent="4"/>
+	</style>
+	<parameter name="imagenCerrada" class="java.lang.String"/>
+	<parameter name="imagenNegativo" class="java.lang.String"/>
+	<parameter name="imagenPositivo" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="ProductoResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[tipoCredito]]></fieldDescription>
+	</field>
+	<field name="CuentasResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[cantidad]]></fieldDescription>
+	</field>
+	<field name="LimiteResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[limite]]></fieldDescription>
+	</field>
+	<field name="AprobadoResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[aprobado]]></fieldDescription>
+	</field>
+	<field name="ActualResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[actual]]></fieldDescription>
+	</field>
+	<field name="VencidoResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[vencido]]></fieldDescription>
+	</field>
+	<field name="SemanalResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[semanal]]></fieldDescription>
+	</field>
+	<field name="QuincenalResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[quincenal]]></fieldDescription>
+	</field>
+	<field name="MensualResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[mensual]]></fieldDescription>
+	</field>
+	<field name="StatusResProd" class="java.lang.String">
+		<fieldDescription><![CDATA[status]]></fieldDescription>
+	</field>
+	<field name="CuentasResProdTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[totalCantidad]]></fieldDescription>
+	</field>
+	<field name="LimiteResProdTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[limiteTotal]]></fieldDescription>
+	</field>
+	<field name="AprobadoResProdTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[aprobadoTotal]]></fieldDescription>
+	</field>
+	<field name="ActualResProdTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[actualTotal]]></fieldDescription>
+	</field>
+	<field name="VencidoResProdTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[vencidoTotal]]></fieldDescription>
+	</field>
+	<field name="SemanalResProdTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[semanalTotal]]></fieldDescription>
+	</field>
+	<field name="QuincenalResProdTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[quincenalTotal]]></fieldDescription>
+	</field>
+	<field name="MensualResProdTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[mensualTotal]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<frame>
+				<reportElement mode="Transparent" x="0" y="0" width="612" height="23" uuid="35198e8f-c762-4525-bbf1-cc14adf0fad6"/>
+				<elementGroup/>
+				<staticText>
+					<reportElement style="Tit-4" x="1" y="1" width="170" height="10" uuid="2ee929ca-b425-4e71-bcc4-a2f4a45e2fbd"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Descripción]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="172" y="2" width="239" height="10" uuid="15fe17ed-f163-4333-b2d1-a7e21d415144"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Montos [Pesos]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="412" y="2" width="179" height="10" uuid="5d556513-e994-4216-a678-6b8e100879bd"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Pagos Requeridos por Corte [Pesos]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="9" y="13" width="133" height="10" uuid="3c3f7f95-fa33-4e3e-b163-ab6e1f1cef64"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Producto]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="143" y="13" width="27" height="10" uuid="ae32ee15-7344-4777-9a65-8572f15fbf7f"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Cuentas]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="171" y="13" width="59" height="10" uuid="baf8c18a-2f2b-4ad3-8d82-996ab91a822e"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Límite]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="231" y="13" width="59" height="10" uuid="b6d7a287-3a2b-4634-8482-96e6a3000cdb"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Aprobado]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="291" y="13" width="59" height="10" uuid="adac307d-8315-43b6-99bb-9d11408d3c90"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Actual]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="351" y="13" width="59" height="10" uuid="76e4de06-e96b-4930-8bed-88cf1af275cf"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Vencido]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="411" y="13" width="59" height="10" uuid="e632921a-7242-46bb-9ad2-ce8b176ba4d3"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Pago semanal]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="471" y="13" width="59" height="10" uuid="55b3b74d-bf22-4170-9e7b-871e6cac6109"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Pago Quincenal]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Tit-4" x="531" y="13" width="59" height="10" uuid="db33a9b2-f8ab-49cd-b4f6-e810d34ea650"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Pago Mensual]]></text>
+				</staticText>
+				<line>
+					<reportElement x="0" y="0" width="592" height="1" forecolor="#006699" uuid="0b22711f-cd78-46f9-a5bc-1977a52690a7"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="0" y="0" width="1" height="13" uuid="c8f5399c-b22b-480d-8997-84366a1a5411"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="171" y="0" width="1" height="13" uuid="a43963d6-d276-4eb8-8afd-a39e3056cdad"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="411" y="0" width="1" height="13" uuid="57ba2896-d4b5-4180-bfb9-b44ebb23aa67"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="591" y="0" width="1" height="13" uuid="9e828bd0-2552-4ee1-af86-c2207c9c671f"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="0" y="12" width="592" height="1" forecolor="#006699" uuid="dfabfbdc-759f-404e-bbff-18fc30fa0df5"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="0" y="22" width="592" height="1" forecolor="#006699" uuid="fc79c6b3-0634-4167-b71a-0e80e4c2fdb6"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="0" y="12" width="1" height="11" uuid="a14bc272-0df4-4043-915c-b94253d1c9b5"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="9" y="12" width="1" height="11" uuid="e956a158-918a-47c8-9580-e47ec9fbad19"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="143" y="12" width="1" height="11" uuid="2d0929af-e3ee-4a2f-a31c-cabde8d6a730"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="171" y="12" width="1" height="11" uuid="8e660e42-f743-4b5a-9c40-0cf245c2dc95"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="231" y="12" width="1" height="11" uuid="161a4caa-a1c8-4b08-91e5-5eea3ab42f3c"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="291" y="12" width="1" height="11" uuid="f4472c9f-32cd-4768-b3f7-5c57b5a6fc0e"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="351" y="12" width="1" height="11" uuid="82fa9884-34bf-4897-a17b-f3fd3dd75802"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="411" y="12" width="1" height="11" uuid="7af4ef49-e834-4e05-828b-ed3e52008390"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="471" y="12" width="1" height="11" uuid="5db4ea87-06ff-4d7b-9751-c690ecc40b6d"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="531" y="12" width="1" height="11" uuid="72beefd3-a10d-43b1-b8cf-d9a6aa3a8544"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="591" y="12" width="1" height="11" uuid="d43b24da-60dd-435c-9421-755d7c9406f7"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="11" splitType="Stretch">
+			<frame>
+				<reportElement mode="Transparent" x="0" y="0" width="592" height="11" uuid="e4ed6c40-95df-4f82-a155-3297218e8d62"/>
+				<elementGroup/>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="9" y="0" width="134" height="10" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="4e8c7005-8e2b-47d3-8bce-630915191125"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ProductoResProd}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="143" y="0" width="28" height="10" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="5a08b8ea-abe6-4ea2-8f0c-f14bba881be3"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CuentasResProd}]]></textFieldExpression>
+				</textField>
+				<textField pattern="" isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="171" y="0" width="60" height="10" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="7ab6e791-cf15-4282-a633-fa8ef0538c06"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{LimiteResProd}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="231" y="0" width="60" height="10" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="a9c87e8d-8ae1-4760-a862-ce72e32c2353"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{AprobadoResProd}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="291" y="0" width="60" height="10" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="bad8cc39-6668-4184-9f14-bfa5731226fe"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{ActualResProd}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="351" y="0" width="60" height="10" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="5e4b583c-e1b6-4888-b91d-ce6266373c81"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{VencidoResProd}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="411" y="0" width="60" height="10" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="0f8fc75a-2c9a-4053-982e-361ca956b530"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{SemanalResProd}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="471" y="0" width="60" height="10" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="e0c45ede-c051-49f0-a1a9-c53765edb674"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{QuincenalResProd}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="531" y="0" width="60" height="10" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="f330049c-e7e3-40b3-a926-bc32835f31ab"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{MensualResProd}))]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="10" width="592" height="1" forecolor="#006699" uuid="575f345b-5d12-40af-b65b-309bb7098e4b"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="0" y="0" width="1" height="11" uuid="04aded17-2519-4447-9541-a30e027206eb"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="9" y="0" width="1" height="11" uuid="17290486-350a-44e3-aa4e-78dfcf85e124"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="143" y="0" width="1" height="11" uuid="d8a3ca91-0c71-4d57-b46d-d3a0f8441917"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="171" y="0" width="1" height="11" uuid="1fe95199-395d-44e6-89df-5569da072c4f"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="231" y="0" width="1" height="11" uuid="319a1264-0ad6-4459-a337-92a6699ba4b7"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="291" y="0" width="1" height="11" uuid="1948850a-deb2-4616-bff0-d7d87d7e93c2"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="351" y="0" width="1" height="11" uuid="7f541363-2387-41c4-9424-db885e5c0f05"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="411" y="0" width="1" height="11" uuid="abc98a55-344c-4d6b-baa7-db93c9b17459"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="471" y="0" width="1" height="11" uuid="91577d4d-a8eb-4ed9-ba84-ffe740845927"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="531" y="0" width="1" height="11" uuid="f20cc30f-762d-4f1e-bf3f-4974dc31fc32"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="591" y="0" width="1" height="11" uuid="6bb2d71f-01bf-49ce-aba8-28d02ce408be"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<image vAlign="Middle">
+					<reportElement x="1" y="0" width="8" height="10" isPrintWhenDetailOverflows="true" uuid="b26ed3d0-ff2f-4aad-9d71-795399ee5f57">
+						<printWhenExpression><![CDATA[$F{StatusResProd}.equals( "vigente" )]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imagenPositivo}]]></imageExpression>
+				</image>
+				<image vAlign="Middle">
+					<reportElement x="1" y="0" width="8" height="10" uuid="85a337dc-cc1c-4869-9fc2-ded8786ae123">
+						<printWhenExpression><![CDATA[$F{StatusResProd}.equals( "atraso" )]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imagenNegativo}]]></imageExpression>
+				</image>
+				<image vAlign="Middle">
+					<reportElement x="1" y="0" width="8" height="10" uuid="84eda87f-cbc2-4570-ad56-6b805bf21372">
+						<printWhenExpression><![CDATA[$F{StatusResProd}.equals( "cerrado" )]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imagenCerrada}]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</detail>
+	<summary>
+		<band height="12">
+			<frame>
+				<reportElement mode="Transparent" x="0" y="0" width="592" height="12" uuid="3daa4cfb-8d7e-4824-b0bc-9e03ef70ff8d"/>
+				<elementGroup/>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="531" y="0" width="60" height="11" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="30f33ad8-c481-4396-af4f-ea1a83c89aed"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{MensualResProdTotal}))]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="11" width="592" height="1" forecolor="#006699" uuid="58696c21-259e-4294-8dd7-44c8722facd7"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="0" y="0" width="1" height="12" uuid="fc8f282b-5f14-4a92-9364-834f5bc63729"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="143" y="0" width="1" height="12" uuid="a74bdfd6-b49f-42e2-8c84-df77541d15e7"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="171" y="0" width="1" height="12" uuid="87102ceb-78f5-4064-b1ad-ccbdc40c642f"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="231" y="0" width="1" height="12" uuid="534b9013-3ee9-4123-b44b-e1803911a01c"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="291" y="0" width="1" height="12" uuid="2bcad539-c4bc-4a5e-8127-b9b38488324e"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="351" y="0" width="1" height="12" uuid="ce4b71bf-a68c-40ab-bac4-f5aeaa431e61"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="411" y="0" width="1" height="12" uuid="77a0d84b-2b2f-48db-b799-ac3cebc4416f"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="471" y="0" width="1" height="12" uuid="74a010ac-8ea2-438e-a59f-b28d46e00568"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="531" y="0" width="1" height="12" uuid="a319c45a-4ca1-4770-b012-5ff78a8554fb"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="591" y="0" width="1" height="12" uuid="b7968f8f-5a9f-46f8-aac6-88ba63741f68"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement style="Tit-4" x="1" y="0" width="142" height="11" uuid="2acc2a1d-f1eb-497a-ba89-fa4c397ff0f8"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Totales]]></text>
+				</staticText>
+				<textField pattern="" isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="143" y="0" width="28" height="11" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="c538ebe5-2b61-455f-b724-8ad166b0d986"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CuentasResProdTotal}]]></textFieldExpression>
+				</textField>
+				<textField pattern="" isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="171" y="0" width="60" height="11" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="eb8aee82-6a87-4a96-9676-ffa5d854d006"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{LimiteResProdTotal}))]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0" isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="231" y="0" width="60" height="11" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="cad26cf5-00f9-4f5c-b7f7-f4d0556bf99c"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{AprobadoResProdTotal}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="291" y="0" width="60" height="11" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="395542ef-e316-4a30-99b0-de188afce329"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{ActualResProdTotal}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="351" y="0" width="60" height="11" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="71104064-da0d-4bdc-8a7f-d1faad1e3846"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{VencidoResProdTotal}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="411" y="0" width="60" height="11" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="f5926bd9-4e57-48d4-8c2e-67437cf9fdae"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{SemanalResProdTotal}))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="471" y="0" width="60" height="11" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="49cc35e8-f7e6-4fa1-94fa-aa30d1376515"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Verdana" size="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{QuincenalResProdTotal}))]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</summary>
+</jasperReport>
