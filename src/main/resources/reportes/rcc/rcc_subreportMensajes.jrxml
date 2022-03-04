@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rcc_subreportMensajes" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="b1eace1a-fa50-416c-bec3-017a24687542">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Tit-4" mode="Opaque" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="SansSerif" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Consult-1" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="4"/>
+	</style>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Mensaje" class="java.lang.String">
+		<fieldDescription><![CDATA[leyenda]]></fieldDescription>
+	</field>
+	<field name="TipoMensaje" class="java.lang.String">
+		<fieldDescription><![CDATA[tipoMensaje]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="269" height="29" isRemoveLineWhenBlank="true" uuid="cb74c4bf-f597-42a1-ac18-6f0aa4189027">
+					<printWhenExpression><![CDATA["2".equals($F{TipoMensaje})]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="1.0" lineColor="#006699"/>
+					<topPen lineWidth="1.0" lineColor="#006699"/>
+					<leftPen lineWidth="1.0" lineColor="#006699"/>
+					<bottomPen lineWidth="1.0" lineColor="#006699"/>
+					<rightPen lineWidth="1.0" lineColor="#006699"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Mensaje} != null && !$F{Mensaje}.equals("") ? $F{Mensaje} : "No hay mensajes..."]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

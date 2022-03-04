@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rcc_subreportIndicadores" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="74f1cc89-6110-4d1b-a688-0e869c1d1dea">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Tit-4" mode="Opaque" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="SansSerif" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Consult-1" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<bottomPen lineWidth="0.25" lineColor="#BFBFBF"/>
+		</box>
+		<paragraph leftIndent="4"/>
+	</style>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="TipoDatoA" class="java.lang.String">
+		<fieldDescription><![CDATA[tipoA]]></fieldDescription>
+	</field>
+	<field name="ValorDatoA" class="java.lang.String">
+		<fieldDescription><![CDATA[valorA]]></fieldDescription>
+	</field>
+	<field name="TipoDatoB" class="java.lang.String">
+		<fieldDescription><![CDATA[tipoB]]></fieldDescription>
+	</field>
+	<field name="ValorDatoB" class="java.lang.String">
+		<fieldDescription><![CDATA[valorB]]></fieldDescription>
+	</field>
+	<field name="PorcentajeAA" class="java.lang.String">
+		<fieldDescription><![CDATA[porcentajeAA]]></fieldDescription>
+	</field>
+	<field name="PorcentajeAB" class="java.lang.String">
+		<fieldDescription><![CDATA[porcentajeAB]]></fieldDescription>
+	</field>
+	<field name="PorcentajeBA" class="java.lang.String">
+		<fieldDescription><![CDATA[porcentajeBA]]></fieldDescription>
+	</field>
+	<field name="PorcentajeBB" class="java.lang.String">
+		<fieldDescription><![CDATA[porcentajeBB]]></fieldDescription>
+	</field>
+	<field name="AbiertosPresente" class="java.lang.String">
+		<fieldDescription><![CDATA[abiertosPresente]]></fieldDescription>
+	</field>
+	<field name="FechasMasAntiguo" class="java.lang.String">
+		<fieldDescription><![CDATA[fechasMasAntiguo]]></fieldDescription>
+	</field>
+	<field name="MontoMayorAprobado" class="java.lang.String">
+		<fieldDescription><![CDATA[montoMayorAprobado]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="175" splitType="Stretch">
+			<staticText>
+				<reportElement style="Tit-4" x="0" y="23" width="207" height="11" uuid="14494580-e534-40d8-80b9-77093a7721b0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Créditos Activos [Sin fecha de cierre]]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="29" width="1" height="140" uuid="95bae74b-4044-4465-b669-efb2bf2ed2b7"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="207" y="24" width="1" height="145" uuid="85ac512e-4059-435e-a202-08d17d5f3dc0"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="414" y="29" width="1" height="140" uuid="c679657a-835a-4de8-b269-a8b82aa5b628"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="168" width="593" height="1" forecolor="#006699" uuid="f9c48776-7011-45f9-8ecb-374b9282e75c"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="592" y="29" width="1" height="140" uuid="02c68743-03ed-4e8e-89b3-77bb09fea7a2"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<elementGroup/>
+			<line>
+				<reportElement x="0" y="23" width="593" height="1" forecolor="#006699" uuid="1ff8269e-c67c-4dae-b185-99c137309f04"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="23" width="1" height="12" uuid="8cbcd415-8b21-4221-82d5-fa1edd6bfa94"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="207" y="23" width="1" height="12" uuid="0ae45a05-a39c-4a6f-ba1f-d0ea2f366879"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="34" width="592" height="1" forecolor="#006699" uuid="11d75ac9-afa4-473f-aedd-9e7e91ee8d70"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="414" y="23" width="1" height="12" uuid="f9ec645f-6663-4904-a295-d5dec5c803a3"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="592" y="24" width="1" height="12" uuid="137debd3-cecb-4301-a65d-3e08b713d554"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<pieChart>
+				<chart isShowLegend="false">
+					<reportElement x="190" y="52" width="169" height="111" uuid="b1aae77d-273d-4aee-a0d4-fb9b6daee5d0"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<pieSeries>
+						<keyExpression><![CDATA[$F{TipoDatoB}]]></keyExpression>
+						<valueExpression><![CDATA[$F{PorcentajeBA} != null && $F{PorcentajeBA}.equals("0.00")
+                                            ? Double.valueOf("0.1")
+                                            : ( $F{PorcentajeBA} != null && $F{PorcentajeBA}.equals("100.00")
+                                                ? Double.valueOf("99.9")
+                                                : Double.valueOf($F{PorcentajeBA}))]]></valueExpression>
+						<labelExpression><![CDATA[null]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Actual"]]></keyExpression>
+						<valueExpression><![CDATA[$F{PorcentajeBB} != null && $F{PorcentajeBB}.equals("0.00")
+                                            ? Double.valueOf("0.1")
+                                            : ( $F{PorcentajeBB} != null && $F{PorcentajeBB}.equals("100.00")
+                                                ? Double.valueOf("99.9")
+                                                : Double.valueOf($F{PorcentajeBB}))]]></valueExpression>
+						<labelExpression><![CDATA[null]]></labelExpression>
+					</pieSeries>
+				</pieDataset>
+				<piePlot>
+					<plot>
+						<seriesColor seriesOrder="0" color="#0000FF"/>
+						<seriesColor seriesOrder="1" color="#FFFF00"/>
+					</plot>
+					<itemLabel>
+						<font fontName="Arial" size="6"/>
+					</itemLabel>
+				</piePlot>
+			</pieChart>
+			<textField>
+				<reportElement x="75" y="39" width="39" height="20" uuid="0a2ee987-76c7-4258-986b-1b50a5954ddf">
+					<printWhenExpression><![CDATA[$F{PorcentajeAA}!= null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PorcentajeAA}+"%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="17" y="39" width="39" height="20" uuid="ea6f55d4-278f-4669-984b-0789b12880a7">
+					<printWhenExpression><![CDATA[$F{PorcentajeAB}!= null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PorcentajeAB}+"%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="39" width="39" height="20" uuid="b4e47e79-9f24-4328-91c6-5dfd930703f4">
+					<printWhenExpression><![CDATA[$F{PorcentajeBB}!= null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PorcentajeBB}+"%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="39" width="39" height="20" uuid="ef5e817b-9c7a-4ee3-a505-04a4e4333764">
+					<printWhenExpression><![CDATA[$F{PorcentajeBA}!= null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PorcentajeBA}+"%"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Tit-4" x="425" y="37" width="61" height="20" uuid="729faf75-bf34-4036-aa88-fb4ce9579809"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Créditos Abiertos en el Presente Año]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Tit-4" x="425" y="77" width="61" height="20" uuid="f7dbc36b-e799-4ec6-8200-1824aacfbeaa"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Crédito más antiguo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Tit-4" x="425" y="117" width="61" height="20" uuid="4e0f4784-a667-428e-9ab1-c94bdf11aca8"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monto mayor aprobado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Tit-4" x="486" y="44" width="14" height="10" uuid="61c77c60-a142-4388-9550-7c8484995a14"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Tit-4" x="486" y="87" width="14" height="10" uuid="511445b2-8719-4bc3-9c94-d706cf78d3d5"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Tit-4" x="486" y="124" width="14" height="10" uuid="dd81caaa-394a-4fc2-88b3-7852fd90055d"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="502" y="44" width="50" height="10" uuid="85b30b28-b44c-4f9d-93d2-6c1b0eadc529"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AbiertosPresente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="502" y="87" width="50" height="10" uuid="9aa760ff-ebf3-4daa-8f5b-6401842ba9f1"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FechasMasAntiguo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="502" y="124" width="50" height="10" uuid="88a8d24b-0f90-4609-a20c-57712744d5fe"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{MontoMayorAprobado}))]]></textFieldExpression>
+			</textField>
+			<pieChart>
+				<chart isShowLegend="false">
+					<reportElement x="-22" y="52" width="169" height="111" uuid="c4c77366-754c-4999-8197-bdab69e7e925"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<pieSeries>
+						<keyExpression><![CDATA[$F{TipoDatoA}]]></keyExpression>
+						<valueExpression><![CDATA[$F{PorcentajeAA} != null && $F{PorcentajeAA}.equals("0.00")
+                                            ? Double.valueOf("0.1")
+                                            : ( $F{PorcentajeAA} != null && $F{PorcentajeAA}.equals("100.00")
+                                                ? Double.valueOf("99.9")
+                                                : Double.valueOf($F{PorcentajeAA}))]]></valueExpression>
+						<labelExpression><![CDATA[null]]></labelExpression>
+					</pieSeries>
+					<pieSeries>
+						<keyExpression><![CDATA["Atraso"]]></keyExpression>
+						<valueExpression><![CDATA[$F{PorcentajeAB} != null && $F{PorcentajeAB}.equals("0.00")
+                                            ? Double.valueOf("0.1")
+                                            : ( $F{PorcentajeAB} != null && $F{PorcentajeAB}.equals("100.00")
+                                                ? Double.valueOf("99.9")
+                                                : Double.valueOf($F{PorcentajeAB}))]]></valueExpression>
+						<labelExpression><![CDATA[null]]></labelExpression>
+					</pieSeries>
+				</pieDataset>
+				<piePlot isCircular="true">
+					<plot>
+						<seriesColor seriesOrder="0" color="#33FF00"/>
+						<seriesColor seriesOrder="1" color="#FF0000"/>
+					</plot>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+			<frame>
+				<reportElement x="141" y="64" width="54" height="30" uuid="6b08b9b7-c38c-4c52-83c1-bfe226588b43"/>
+				<staticText>
+					<reportElement x="11" y="1" width="39" height="10" uuid="0d9690e4-ca4d-4837-85a2-d18ce5399d02">
+						<printWhenExpression><![CDATA[$F{PorcentajeAA}!= null]]></printWhenExpression>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="6"/>
+					</textElement>
+					<text><![CDATA[Total Vigente]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="11" y="17" width="43" height="10" uuid="dd75287f-9df8-471b-aa68-5a2fad8f42ed">
+						<printWhenExpression><![CDATA[$F{PorcentajeAB}!= null]]></printWhenExpression>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="6"/>
+					</textElement>
+					<text><![CDATA[Total en Atraso]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="0" y="0" width="7" height="9" forecolor="#00FF33" backcolor="#00FF33" uuid="c903d984-a067-4203-962b-9d2b03d45116">
+						<printWhenExpression><![CDATA[$F{PorcentajeAA}!= null]]></printWhenExpression>
+					</reportElement>
+				</rectangle>
+				<rectangle>
+					<reportElement x="0" y="16" width="7" height="9" forecolor="#FF0000" backcolor="#FF0000" uuid="ec37822f-1ee1-48b4-be85-2e24144a9cde">
+						<printWhenExpression><![CDATA[$F{PorcentajeAB}!= null]]></printWhenExpression>
+					</reportElement>
+				</rectangle>
+			</frame>
+			<frame>
+				<reportElement x="343" y="64" width="60" height="30" uuid="5f7797c5-d7ae-4c8c-a037-a843446f236a"/>
+				<staticText>
+					<reportElement x="10" y="1" width="49" height="10" uuid="0bd1500a-dbcb-4b35-b2eb-7afcb4a40905">
+						<printWhenExpression><![CDATA[$F{PorcentajeBA}!= null]]></printWhenExpression>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="6"/>
+					</textElement>
+					<text><![CDATA[Monto Aprobado]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="11" y="16" width="49" height="10" uuid="d0221ebe-cd72-40ee-a858-9f61fc6a3874">
+						<printWhenExpression><![CDATA[$F{PorcentajeBB}!= null]]></printWhenExpression>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="6"/>
+					</textElement>
+					<text><![CDATA[Saldo Actual]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="0" y="1" width="7" height="9" forecolor="#0000FF" backcolor="#0000FF" uuid="4c87ef3c-1d15-4167-b5b6-90e2b3addfa4">
+						<printWhenExpression><![CDATA[$F{PorcentajeBA}!= null]]></printWhenExpression>
+					</reportElement>
+				</rectangle>
+				<rectangle>
+					<reportElement x="0" y="15" width="7" height="9" forecolor="#FFFF00" backcolor="#FFFF00" uuid="8af2de70-91d7-4eb3-a620-90884ff219de">
+						<printWhenExpression><![CDATA[$F{PorcentajeBB}!= null]]></printWhenExpression>
+					</reportElement>
+				</rectangle>
+			</frame>
+			<staticText>
+				<reportElement style="Tit-4" x="208" y="24" width="206" height="10" uuid="85780a6d-292f-40e9-8b64-1e393fcfedb0"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Análisis de Deuda [Pesos]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5" width="100" height="15" uuid="42b81245-d889-4c3f-87d3-16df0ea86d8b"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Indicadores]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

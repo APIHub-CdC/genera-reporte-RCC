@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rcc_subreport_consultas_realizadas" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="cd723978-ff92-4540-bb10-f2e365f4d5c8">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Tit-4" mode="Opaque" hAlign="Left" vAlign="Middle" fontName="SansSerif" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<pen lineColor="#006699"/>
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Consult-1" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<pen lineColor="#006699"/>
+		<paragraph leftIndent="4"/>
+	</style>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="FechaConRes" class="java.lang.String">
+		<fieldDescription><![CDATA[fechaConsulta]]></fieldDescription>
+	</field>
+	<field name="OtorganteConRes" class="java.lang.String">
+		<fieldDescription><![CDATA[nombreOtorgante]]></fieldDescription>
+	</field>
+	<field name="TipoCreditoConRes" class="java.lang.String">
+		<fieldDescription><![CDATA[tipoCredito]]></fieldDescription>
+	</field>
+	<field name="MontoConRes" class="java.lang.String">
+		<fieldDescription><![CDATA[importeCredito]]></fieldDescription>
+	</field>
+	<field name="MonedaConRes" class="java.lang.String">
+		<fieldDescription><![CDATA[claveUnidadMonetaria]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="13" splitType="Stretch">
+			<frame>
+				<reportElement mode="Transparent" x="0" y="0" width="612" height="13" uuid="7ceb606f-5081-4ddf-be32-4182e8441cc0"/>
+				<elementGroup/>
+				<line>
+					<reportElement x="0" y="0" width="585" height="1" forecolor="#006699" uuid="226c8263-8014-40df-bd82-7b433c20dafb"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="0" y="0" width="1" height="13" uuid="c4dafafe-4624-4d63-b02b-e509e83e6284"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement style="Tit-4" x="1" y="1" width="117" height="12" uuid="ef2a4020-240e-484e-a906-92db1e8a3667"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fecha de Consulta]]></text>
+				</staticText>
+				<line>
+					<reportElement x="117" y="0" width="1" height="13" uuid="aaadcad4-d5ac-4306-9c47-49c9415a0e64"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement style="Tit-4" x="118" y="1" width="116" height="12" uuid="5a145348-83f6-413f-a460-3f241e107d6b"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true" isUnderline="false"/>
+					</textElement>
+					<text><![CDATA[Otorgante]]></text>
+				</staticText>
+				<line>
+					<reportElement x="234" y="0" width="1" height="13" uuid="c047b078-2516-4e44-b52d-f5e9337fdda9"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement style="Tit-4" x="235" y="1" width="116" height="12" uuid="eeeef712-40f0-4853-995d-2b59b82a2a41"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Tipo de Crédito]]></text>
+				</staticText>
+				<line>
+					<reportElement x="351" y="0" width="1" height="13" uuid="0dcc350d-7e81-4a67-8799-cf38606bcdc6"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement style="Tit-4" x="352" y="1" width="116" height="12" uuid="5f51cc8a-7937-4e87-8421-4df5d83043a6"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Monto]]></text>
+				</staticText>
+				<line>
+					<reportElement x="468" y="0" width="1" height="13" uuid="fc51a311-a389-4fd0-b486-bf7e2169e9f6"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement style="Tit-4" x="469" y="1" width="116" height="12" uuid="8acd62ee-2a25-4996-9820-67f99317d4de"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Moneda]]></text>
+				</staticText>
+				<line>
+					<reportElement x="585" y="0" width="1" height="13" uuid="16d3bd4e-1dd7-42e9-8cc4-cb6893bae42c"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="0" y="12" width="586" height="1" uuid="1893b48a-e246-4c4d-adca-7669bb23dd92"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<frame>
+				<reportElement mode="Transparent" x="0" y="-1" width="612" height="13" uuid="e4ed6c40-95df-4f82-a155-3297218e8d62"/>
+				<elementGroup/>
+				<frame>
+					<reportElement mode="Transparent" x="0" y="0" width="586" height="13" uuid="3c3dbfe3-d262-4067-8abf-240278208197"/>
+					<line>
+						<reportElement x="0" y="0" width="1" height="12" uuid="8e7f8d25-1fd2-4782-8450-d91b291e8a2c"/>
+						<graphicElement>
+							<pen lineWidth="0.5" lineColor="#006699"/>
+						</graphicElement>
+					</line>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="117" height="12" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="4e8c7005-8e2b-47d3-8bce-630915191125"/>
+						<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None" markup="none">
+							<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{FechaConRes}]]></textFieldExpression>
+					</textField>
+					<line>
+						<reportElement x="117" y="1" width="1" height="12" uuid="15f1fdb8-c9e0-43be-94da-4f97883efb05"/>
+						<graphicElement>
+							<pen lineWidth="0.5" lineColor="#006699"/>
+						</graphicElement>
+					</line>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="118" y="0" width="116" height="12" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="5a08b8ea-abe6-4ea2-8f0c-f14bba881be3"/>
+						<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None" markup="none">
+							<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{OtorganteConRes}]]></textFieldExpression>
+					</textField>
+					<line>
+						<reportElement x="234" y="1" width="1" height="12" uuid="f5c57ac2-51b4-4ec6-9a48-6e311d818489"/>
+						<graphicElement>
+							<pen lineWidth="0.5" lineColor="#006699"/>
+						</graphicElement>
+					</line>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="235" y="0" width="116" height="12" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="a7a51729-46d1-4c48-9a4a-006ca93753d3"/>
+						<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None" markup="none">
+							<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{TipoCreditoConRes}]]></textFieldExpression>
+					</textField>
+					<line>
+						<reportElement x="351" y="1" width="1" height="12" uuid="12244c12-58e6-4f25-b2d2-707efa62eace"/>
+						<graphicElement>
+							<pen lineWidth="0.5" lineColor="#006699"/>
+						</graphicElement>
+					</line>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="352" y="0" width="116" height="12" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="305167c8-1ce1-4ce3-89c0-7002d8b864fa"/>
+						<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None" markup="none">
+							<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA[new DecimalFormat("#,##0").format(new Double($F{MontoConRes}))]]></textFieldExpression>
+					</textField>
+					<line>
+						<reportElement x="468" y="1" width="1" height="12" uuid="375f5644-02b5-4ef3-bfd9-5caa157cd885"/>
+						<graphicElement>
+							<pen lineWidth="0.5" lineColor="#006699"/>
+						</graphicElement>
+					</line>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Consult-1" stretchType="RelativeToTallestObject" mode="Transparent" x="469" y="0" width="116" height="12" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="e1567274-a110-44c6-8656-be2f3079e073"/>
+						<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None" markup="none">
+							<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{MonedaConRes}]]></textFieldExpression>
+					</textField>
+					<line>
+						<reportElement x="585" y="1" width="1" height="12" uuid="2c07b026-6281-46e0-99c9-e86203d1f9c2"/>
+						<graphicElement>
+							<pen lineWidth="0.5" lineColor="#006699"/>
+						</graphicElement>
+					</line>
+				</frame>
+			</frame>
+			<line>
+				<reportElement x="0" y="11" width="585" height="1" forecolor="#006699" uuid="72986bb7-e64b-4144-a614-aeb3126c6028"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

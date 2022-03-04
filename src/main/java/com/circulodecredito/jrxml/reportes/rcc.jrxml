@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rcc" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="592" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10" whenResourceMissingType="Empty" uuid="eacd6291-d420-4027-8c0a-b08544db2070">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="112"/>
+	<property name="ireport.y" value="12"/>
+	<import value="com.circulodecredito.generarreporte.mapper.*"/>
+	<style name="Tit-1" forecolor="#2C3A49" fontName="Arial" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Tit-2" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Tit-3" forecolor="#2C3A49" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineWidth="0.75" lineColor="#A0A0A0"/>
+			<topPen lineWidth="0.0" lineColor="#A0A0A0"/>
+			<leftPen lineWidth="0.0" lineColor="#A0A0A0"/>
+			<rightPen lineWidth="0.0" lineColor="#A0A0A0"/>
+		</box>
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Tit-4" mode="Opaque" forecolor="#1C2A39" backcolor="#EEEEEE" hAlign="Left" vAlign="Middle" fontName="SansSerif" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Tit-5" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="SansSerif" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Tit-6" mode="Opaque" forecolor="#0057A0" backcolor="#FFFFFF" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<topPen lineWidth="0.0" lineColor="#DADADA"/>
+			<rightPen lineWidth="0.0" lineColor="#DADADA"/>
+		</box>
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-1" forecolor="#2C3A49" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="10"/>
+	<style name="Txt-2" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Txt-3" forecolor="#0057A0" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="7" isItalic="true" isUnderline="true" isStrikeThrough="true"/>
+	<style name="Txt-4" forecolor="#141D28" hAlign="Left" vAlign="Top" fontName="Arial" fontSize="7">
+		<paragraph lineSpacing="Proportional" lineSpacingSize="1.0"/>
+	</style>
+	<style name="Txt-5" forecolor="#1C2A39" vAlign="Middle" fontName="Arial" fontSize="7" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Txt-6" forecolor="#1C2A39" hAlign="Left" vAlign="Top" fontName="Arial" fontSize="7" isPdfEmbedded="true"/>
+	<style name="Txt-7" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-8" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="10">
+		<box>
+			<pen lineStyle="Dotted"/>
+			<topPen lineStyle="Dotted"/>
+			<leftPen lineStyle="Dotted"/>
+			<rightPen lineStyle="Dotted"/>
+		</box>
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-9" forecolor="#808080" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-10" forecolor="#1C2A39" hAlign="Justified" vAlign="Top" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box topPadding="2"/>
+		<paragraph leftIndent="2" rightIndent="2"/>
+	</style>
+	<style name="Txt-11" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-12" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-13" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-14" forecolor="#909090" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-15" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Txt-16" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Txt-17" forecolor="#808080" hAlign="Left" vAlign="Middle" fontName="SansSerif" fontSize="7">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-18" forecolor="#2C3A49" backcolor="#EEEEEE" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph rightIndent="2"/>
+	</style>
+	<style name="Txt-19" mode="Opaque" forecolor="#2C3E50" backcolor="#0077C0" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineColor="#2C3E50"/>
+			<topPen lineWidth="0.75" lineColor="#2C3E50"/>
+			<leftPen lineColor="#2C3E50"/>
+			<rightPen lineColor="#2C3E50"/>
+		</box>
+	</style>
+	<style name="Txt-20" forecolor="#004790" hAlign="Justified" vAlign="Top" fontName="Arial" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<topPen lineWidth="0.0" lineColor="#C0C0C0"/>
+		</box>
+	</style>
+	<style name="Txt-21" forecolor="#000000" vAlign="Middle" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Txt-22" mode="Transparent" forecolor="#303030" backcolor="#ECF0F1" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="5" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph lineSpacing="Proportional"/>
+	</style>
+	<style name="Txt-23" mode="Transparent" forecolor="#303030" backcolor="#707070" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="5" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph lineSpacing="Proportional"/>
+	</style>
+	<style name="Txt-24" mode="Transparent" forecolor="#2C3E50" backcolor="#FFFFFF" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<pen lineColor="#2C3E50"/>
+		<box>
+			<pen lineWidth="0.75" lineColor="#2C3E50"/>
+			<topPen lineWidth="0.75" lineColor="#2C3E50"/>
+			<leftPen lineWidth="0.0" lineColor="#2C3E50"/>
+			<rightPen lineWidth="0.0" lineColor="#2C3E50"/>
+		</box>
+	</style>
+	<style name="Año" mode="Transparent" forecolor="#505050" fill="Solid" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252">
+		<box>
+			<pen lineWidth="0.75" lineColor="#808080"/>
+			<topPen lineWidth="0.0" lineColor="#D0D0D0"/>
+			<leftPen lineWidth="1.75" lineStyle="Solid" lineColor="#C0C0C0"/>
+			<rightPen lineWidth="0.75" lineColor="#D0D0D0"/>
+		</box>
+	</style>
+	<style name="Aval-1" mode="Transparent" forecolor="#555555" backcolor="#F3F3F3" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="4"/>
+	</style>
+	<style name="Aval-2" mode="Transparent" forecolor="#555555" backcolor="#F3F3F3" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="4"/>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[!$F{SaldoVencido}.equals("0")]]></conditionExpression>
+			<style forecolor="#C72C1C" fontName="Arial" fontSize="6"/>
+		</conditionalStyle>
+	</style>
+	<style name="Aval-1-A" mode="Transparent" forecolor="#555555" backcolor="#FFFFFF" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<rightPen lineWidth="0.0" lineColor="#DADADA"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{EstatusAvales} != null && $F{EstatusAvales}]]></conditionExpression>
+			<style mode="Transparent" hAlign="Left">
+				<paragraph leftIndent="5"/>
+			</style>
+		</conditionalStyle>
+	</style>
+	<style name="Aval-1-B" mode="Opaque" forecolor="#555555" backcolor="#F8F8F8" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<rightPen lineWidth="0.0" lineColor="#DADADA"/>
+		</box>
+	</style>
+	<style name="Line-Aval-1" mode="Transparent" backcolor="#D5D8DA" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<pen lineStyle="Solid"/>
+		<box>
+			<topPen lineWidth="0.0" lineColor="#DADADA"/>
+		</box>
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Footer-Aval" forecolor="#2C3A49" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineWidth="0.0" lineColor="#A0A0A0"/>
+			<leftPen lineWidth="0.0" lineColor="#A0A0A0"/>
+			<rightPen lineWidth="0.0" lineColor="#A0A0A0"/>
+		</box>
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Count-1">
+		<box topPadding="1" bottomPadding="1">
+			<leftPen lineColor="#FF0033"/>
+		</box>
+	</style>
+	<style name="Linea-1" forecolor="#2C3A49" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="9">
+		<box bottomPadding="0">
+			<pen lineWidth="4.5"/>
+			<topPen lineWidth="0.0" lineColor="#00CCCC"/>
+			<leftPen lineWidth="0.0" lineColor="#00CCCC"/>
+			<rightPen lineWidth="0.0" lineColor="#FF3300"/>
+		</box>
+	</style>
+	<style name="Linea-2">
+		<box bottomPadding="0">
+			<pen lineWidth="7.5"/>
+			<topPen lineWidth="0.0" lineColor="#00CCCC"/>
+			<leftPen lineWidth="0.0" lineColor="#00CCCC"/>
+			<rightPen lineWidth="0.0" lineColor="#FF3300"/>
+		</box>
+	</style>
+	<style name="Pagina" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="6"/>
+	<style name="Pipe-1" fontSize="12">
+		<box>
+			<leftPen lineWidth="0.5" lineColor="#1C2A39"/>
+		</box>
+	</style>
+	<style name="Pipe-2" fontSize="12">
+		<box>
+			<leftPen lineWidth="0.5" lineColor="#808080"/>
+		</box>
+	</style>
+	<style name="Info-1" forecolor="#3C3C3C" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="6">
+		<paragraph lineSpacing="Proportional"/>
+	</style>
+	<style name="Info-2" forecolor="#C72C1C" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="6">
+		<paragraph lineSpacing="Proportional"/>
+	</style>
+	<style name="Alerta" mode="Opaque" forecolor="#FF0000" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineWidth="0.0" lineColor="#D73C2C"/>
+			<topPen lineWidth="0.0" lineColor="#D73C2C"/>
+			<leftPen lineWidth="0.0" lineColor="#D73C2C"/>
+			<rightPen lineWidth="0.0" lineColor="#D73C2C"/>
+		</box>
+		<paragraph lineSpacing="Proportional"/>
+	</style>
+	<style name="Retraso-1" forecolor="#C72C1C" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="6" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineWidth="0.75" lineColor="#D0D0D0"/>
+			<topPen lineWidth="0.0" lineColor="#D0D0D0"/>
+			<leftPen lineWidth="0.0" lineColor="#D0D0D0"/>
+			<rightPen lineWidth="0.75" lineColor="#D0D0D0"/>
+		</box>
+		<paragraph lineSpacing="Proportional"/>
+	</style>
+	<style name="Retraso-2" forecolor="#C72C1C" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="6" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineWidth="0.5" lineColor="#D0D0D0"/>
+			<topPen lineWidth="0.0" lineColor="#D0D0D0"/>
+			<leftPen lineWidth="0.0" lineColor="#D0D0D0"/>
+			<rightPen lineWidth="0.75" lineColor="#D0D0D0"/>
+		</box>
+		<paragraph lineSpacing="Proportional"/>
+	</style>
+	<style name="Mes" forecolor="#606060" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<pen lineColor="#606060"/>
+		<box>
+			<pen lineWidth="0.75" lineColor="#D0D0D0"/>
+			<topPen lineWidth="0.0" lineColor="#D0D0D0"/>
+			<leftPen lineWidth="0.0" lineColor="#D0D0D0"/>
+			<rightPen lineWidth="0.75" lineColor="#D0D0D0"/>
+		</box>
+		<paragraph lineSpacing="Proportional"/>
+	</style>
+	<style name="R-ipo" forecolor="#C72C1C" hAlign="Left" vAlign="Middle" fontName="SansSerif" fontSize="7">
+		<paragraph leftIndent="2"/>
+	</style>
+	<style name="Txt-leyenda" forecolor="#1E2D3B" backcolor="#FFFFFF" fill="Solid" hAlign="Left" vAlign="Middle" isBlankWhenNull="true" fontName="Arial" fontSize="4" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineWidth="0.0" lineColor="#E3E3E3"/>
+			<topPen lineWidth="0.0" lineColor="#E3E3E3"/>
+			<leftPen lineWidth="0.0" lineColor="#E3E3E3"/>
+			<rightPen lineWidth="0.0" lineColor="#E3E3E3"/>
+		</box>
+	</style>
+	<style name="Consult-1" mode="Transparent" forecolor="#1C2A39" backcolor="#E0E0E0" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="4"/>
+	</style>
+	<style name="Consult-2" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph leftIndent="4"/>
+	</style>
+	<style name="Declarat-1" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineWidth="0.75" lineColor="#BFBFBF"/>
+			<topPen lineWidth="0.0" lineColor="#BFBFBF"/>
+			<leftPen lineWidth="0.0" lineColor="#BFBFBF"/>
+			<rightPen lineWidth="0.5" lineColor="#BFBFBF"/>
+		</box>
+		<paragraph leftIndent="4"/>
+	</style>
+	<style name="Declarat-2" mode="Transparent" forecolor="#1C2A39" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineWidth="0.75" lineColor="#E0E0E0"/>
+			<topPen lineWidth="0.0" lineColor="#E0E0E0"/>
+			<leftPen lineWidth="0.0" lineColor="#E0E0E0"/>
+			<rightPen lineWidth="0.0" lineColor="#E0E0E0"/>
+		</box>
+		<paragraph leftIndent="4"/>
+	</style>
+	<style name="Footer-1" backcolor="#FFFFFF" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<rightPen lineWidth="0.75" lineColor="#D0D0D0"/>
+		</box>
+	</style>
+	<style name="Txt-sc-1" forecolor="#2C3A49" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="28" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Txt-sc-2" forecolor="#0468BF" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Txt-sc-3" forecolor="#2C3A49" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Head-1" fill="Solid" hAlign="Left" vAlign="Top" fontName="Arial" fontSize="30" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<paragraph tabStopWidth="40"/>
+	</style>
+	<style name="Font" fontName="Arial" fontSize="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_1" fontName="Arial" fontSize="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_2" fontName="Verdana" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_3" fontName="Arial" fontSize="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_4" fontName="Verdana" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_5" fontName="Verdana" fontSize="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_6" fontName="Arial" fontSize="8" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_7" forecolor="#003366" backcolor="#003366" pattern="" fontName="Arial" fontSize="8" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_8" fontName="Times New Roman" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_9" isBlankWhenNull="true" fontName="Arial" fontSize="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_10" fontName="Arial" fontSize="12" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_11" fontName="Arial" fontSize="12" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_13" fontName="Arial" fontSize="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_14" fontName="Verdana" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_15" fontName="Verdana" fontSize="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_16" fontName="Arial" fontSize="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_17" fontName="Arial" fontSize="8" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_18" fontName="Arial" fontSize="5" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_19" fontName="Arial" fontSize="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_20" fontName="Arial" fontSize="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_21" fontName="Arial" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_22" fontName="Arial" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_23" fontName="Verdana" fontSize="7" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_24" fontName="Arial" fontSize="19" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_25" fontName="Arial" fontSize="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Font_26" fontName="Arial" fontSize="17" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<parameter name="imagenTacometro" class="java.lang.String"/>
+	<parameter name="subrepPath" class="java.lang.String"/>
+	<parameter name="imagenLogo" class="java.lang.String"/>
+	<parameter name="imagenCerrada" class="java.lang.String"/>
+	<parameter name="imagenNegativo" class="java.lang.String"/>
+	<parameter name="imagenPositivo" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Cuentas" class="java.util.List">
+		<fieldDescription><![CDATA[personas.persona.cuentas.cuenta]]></fieldDescription>
+	</field>
+	<field name="Mensaje" class="java.util.List">
+		<fieldDescription><![CDATA[personas.persona.mensajes.mensaje]]></fieldDescription>
+	</field>
+	<field name="FolioConsulta" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.encabezado.folioConsulta]]></fieldDescription>
+	</field>
+	<field name="FolioOtraSIC" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.folioConsultaBC]]></fieldDescription>
+	</field>
+	<field name="Nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.nombre.nombres]]></fieldDescription>
+	</field>
+	<field name="FICOscore" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.scores.score.valor]]></fieldDescription>
+	</field>
+	<field name="NombreScore" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.scores.score.nombreScore]]></fieldDescription>
+	</field>
+	<field name="FechaNacimiento" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.nombre.fechaNacimiento]]></fieldDescription>
+	</field>
+	<field name="RFC" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.nombre.rfc]]></fieldDescription>
+	</field>
+	<field name="CURP" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.nombre.curp]]></fieldDescription>
+	</field>
+	<field name="RazonScore" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.descripcionRazones.razon1]]></fieldDescription>
+	</field>
+	<field name="Razon2Score" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.descripcionRazones.razon2]]></fieldDescription>
+	</field>
+	<field name="Razon3Score" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.descripcionRazones.razon3]]></fieldDescription>
+	</field>
+	<field name="Razon4Score" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.descripcionRazones.razon4]]></fieldDescription>
+	</field>
+	<field name="EmpleosInd" class="java.util.List">
+		<fieldDescription><![CDATA[personas.persona.empleos.lstEmpleo]]></fieldDescription>
+	</field>
+	<field name="DomicilioInd" class="java.util.List">
+		<fieldDescription><![CDATA[personas.persona.domicilios.domicilio]]></fieldDescription>
+	</field>
+	<field name="DetalleInd" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[personas.persona.flagNoEmpresarial]]></fieldDescription>
+	</field>
+	<field name="ConsultasInd" class="java.util.List">
+		<fieldDescription><![CDATA[personas.persona.consultasEfectuadas.consultaEfectuada]]></fieldDescription>
+	</field>
+	<field name="CanInd" class="java.util.List">
+		<fieldDescription><![CDATA[personas.persona.cuentasCan.can]]></fieldDescription>
+	</field>
+	<field name="APaterno" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.nombre.apellidoPaterno]]></fieldDescription>
+	</field>
+	<field name="AMaterno" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.nombre.apellidoMaterno]]></fieldDescription>
+	</field>
+	<field name="consolidado" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[personas.persona.consolidado]]></fieldDescription>
+	</field>
+	<field name="DescRazon1" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.descripcionRazones.razonDescripcion1]]></fieldDescription>
+	</field>
+	<field name="DescRazon2" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.descripcionRazones.razonDescripcion2]]></fieldDescription>
+	</field>
+	<field name="DescRazon3" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.descripcionRazones.razonDescripcion3]]></fieldDescription>
+	</field>
+	<field name="DescRazon4" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.descripcionRazones.razonDescripcion4]]></fieldDescription>
+	</field>
+	<field name="MensajeInd" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[personas.persona.mostrarMensajes]]></fieldDescription>
+	</field>
+	<field name="MensajePld" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[personas.persona.mostrarMensajesPld]]></fieldDescription>
+	</field>
+	<field name="ResumenProductoInd" class="java.util.List">
+		<fieldDescription><![CDATA[personas.persona.resumenPorProducto.productoResumen]]></fieldDescription>
+	</field>
+	<field name="IndicadoresInd" class="java.util.List">
+		<fieldDescription><![CDATA[personas.persona.graficas.grafica]]></fieldDescription>
+	</field>
+	<field name="EmpresarialInd" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[personas.persona.flagEmpresarial]]></fieldDescription>
+	</field>
+	<field name="fechaConsultaTexto" class="java.lang.String">
+		<fieldDescription><![CDATA[personas.persona.fechaConsultaTexto]]></fieldDescription>
+	</field>
+	<variable name="Today" class="java.util.Date">
+		<variableExpression><![CDATA[(new SimpleDateFormat("yyyy/MM/dd")).format(new Date())]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="58" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement style="Txt-21" mode="Transparent" x="458" y="28" width="133" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="deaef77f-0305-4518-9220-4100d619eb31"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FolioConsulta}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Txt-21" mode="Transparent" x="458" y="38" width="132" height="12" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFFF" uuid="ad94fc38-3c10-4cbf-8429-788963e476ad"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Verdana" size="6" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FolioOtraSIC}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Font_1" x="360" y="17" width="94" height="10" uuid="72a4d072-982e-4775-839c-42f191574f1b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de consulta:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Font_1" x="360" y="28" width="94" height="10" uuid="2372b51c-1774-4adb-b008-205a5f2c9a82"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Folio consulta:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Font_1" x="360" y="38" width="94" height="12" uuid="6987aa93-09ce-46dd-8cc9-97317ba1de22">
+					<printWhenExpression><![CDATA[$F{FolioOtraSIC} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Folio consulta otra SIC:]]></text>
+			</staticText>
+			<image onErrorType="Blank">
+				<reportElement x="-1" y="0" width="100" height="41" uuid="8d014213-df12-42d8-aca2-f1b48f1cfb82"/>
+				<imageExpression><![CDATA[$P{imagenLogo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="145" y="11" width="190" height="47" uuid="f86ddf50-7768-468b-b4e3-9d7edeaec9db"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="17" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{consolidado}.booleanValue() ? "Reporte de Crédito Consolidado" : "Reporte de Crédito")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="458" y="17" width="133" height="10" uuid="eb411caa-4e2b-4c4c-9ecf-81b3e3c3e621"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaConsultaTexto} != null ? $F{fechaConsultaTexto} : ""]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="190">
+			<staticText>
+				<reportElement style="Font" x="0" y="13" width="271" height="15" isRemoveLineWhenBlank="true" uuid="b7cae961-cc8b-44c0-ba9b-ffd27f127b53"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Datos Generales]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Transparent" x="1" y="31" width="270" height="95" forecolor="#00CCCC" backcolor="#99FF99" uuid="337bdad3-88bf-4781-a8de-eb73b3bedb57"/>
+				<staticText>
+					<reportElement style="Font_16" x="0" y="13" width="120" height="12" uuid="764aa132-e7fb-42fa-a789-f2c338f0e12b"/>
+					<textElement textAlignment="Right">
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Nombre (s):]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Font_16" x="0" y="25" width="120" height="12" uuid="7ae588cc-3981-42f5-8347-d8b6c834a833"/>
+					<textElement textAlignment="Right">
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[Apellido Paterno:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Font_16" x="0" y="37" width="120" height="12" uuid="3a0e8ee9-d699-4381-9b91-466782b8db4f"/>
+					<textElement textAlignment="Right">
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[Apellido Materno:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Txt-23" x="0" y="49" width="120" height="12" forecolor="#000000" backcolor="#FFFFFF" uuid="88afafa1-05bf-4974-916c-8202414f0a49"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fecha de Nacimiento:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Txt-23" x="0" y="61" width="120" height="12" uuid="14a4047d-c091-420b-a3f6-1afa4e5f758e"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[RFC:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Txt-23" x="0" y="73" width="120" height="12" uuid="0d195bad-1bb9-4bd6-a0c7-a4ea957d2595"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[CURP:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Font_4" x="124" y="13" width="146" height="12" uuid="56d355a6-85e0-46fa-bb4b-b570299ea750"/>
+					<textFieldExpression><![CDATA[$F{Nombre}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Font_4" x="124" y="25" width="146" height="12" uuid="1ae86d8d-bbef-421a-828d-0b128d8ab3de"/>
+					<textFieldExpression><![CDATA[$F{APaterno}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Font_4" x="124" y="37" width="146" height="12" uuid="6a6bba65-ba72-4d56-b395-a2a4bb3cadfa"/>
+					<textFieldExpression><![CDATA[$F{AMaterno}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Font_4" x="124" y="49" width="146" height="12" isRemoveLineWhenBlank="true" uuid="97887b70-61e9-4524-9273-676404cb7c75"/>
+					<textFieldExpression><![CDATA[$F{FechaNacimiento}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Font_4" x="124" y="61" width="146" height="12" isRemoveLineWhenBlank="true" uuid="9a5d3c35-94e4-4bbe-844b-fcde26837bb1"/>
+					<textFieldExpression><![CDATA[$F{RFC}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Font_4" x="124" y="73" width="146" height="12" isRemoveLineWhenBlank="true" uuid="5dacd914-7360-4688-8911-8cab7b73e948"/>
+					<textFieldExpression><![CDATA[$F{CURP}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement mode="Transparent" x="0" y="0" width="270" height="95" uuid="fa95d467-1e2c-42b3-94ba-05279c75dfcb"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</rectangle>
+			</frame>
+			<textField>
+				<reportElement style="Font_24" x="499" y="3" width="59" height="28" forecolor="#1C2A39" uuid="1c8e0001-cc13-4bbe-892d-b9a0441ef28b">
+					<printWhenExpression><![CDATA[$F{FICOscore} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FICOscore}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Font_3" x="386" y="160" width="83" height="12" uuid="eed7b6d4-d6bc-4890-97eb-b6ef29099d89">
+					<printWhenExpression><![CDATA[!($F{RazonScore} == null && $F{Razon2Score} == null && $F{Razon3Score} == null && $F{Razon4Score} == null)]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Razones de Score:]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Font_3" x="471" y="160" width="12" height="12" forecolor="#1C2A39" uuid="66cd389c-eb7f-404e-8f4c-cb31fcc227b8">
+					<printWhenExpression><![CDATA[$F{RazonScore} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RazonScore}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Font_3" x="482" y="160" width="1" height="12" uuid="6da6f397-2d2a-4e35-86d5-126f3f3b2a97">
+					<printWhenExpression><![CDATA[$F{Razon2Score} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Font_3" x="485" y="160" width="12" height="12" forecolor="#1C2A39" uuid="7ccdd034-29c0-4b6f-afa0-77bc9d49a755">
+					<printWhenExpression><![CDATA[$F{Razon2Score} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Razon2Score}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Font_3" x="496" y="160" width="1" height="12" uuid="e094a180-48df-4d9e-a9ff-5747d783a62c">
+					<printWhenExpression><![CDATA[$F{Razon3Score} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Font_3" x="499" y="160" width="12" height="12" forecolor="#1C2A39" uuid="6e758427-ce5f-4819-a04a-d9bc40836ba0">
+					<printWhenExpression><![CDATA[$F{Razon3Score} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Razon3Score}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Font_3" x="510" y="160" width="1" height="12" uuid="727d346e-0b4f-4cb2-b448-0f5d25c883ac">
+					<printWhenExpression><![CDATA[$F{Razon4Score} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Font_3" x="513" y="160" width="12" height="12" forecolor="#1C2A39" uuid="0b22703f-1f30-4cb6-9124-4768286864da">
+					<printWhenExpression><![CDATA[$F{Razon4Score} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Razon4Score}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Font" x="1" y="139" width="270" height="15" isRemoveLineWhenBlank="true" uuid="437b3d59-13d6-4ead-8048-dac0b15d79a8">
+					<printWhenExpression><![CDATA[$F{MensajeInd} != null && $F{MensajeInd}.booleanValue()]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mensajes]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="1" y="154" width="270" height="32" isRemoveLineWhenBlank="true" uuid="3f47d328-3b97-48af-9d76-7895ca0c6a55">
+					<printWhenExpression><![CDATA[$F{MensajeInd} != null && $F{MensajeInd}.booleanValue()]]></printWhenExpression>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{Mensaje})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportMensajes.jasper"]]></subreportExpression>
+			</subreport>
+			<image>
+				<reportElement x="393" y="26" width="120" height="121" uuid="ba6ad52b-631c-4a64-8647-742ff65bf530">
+					<printWhenExpression><![CDATA[$F{FICOscore} != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imagenTacometro}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="356" y="4" width="127" height="27" uuid="5ffa2ede-110b-4e57-8fe7-9deac915051d">
+					<printWhenExpression><![CDATA[$F{FICOscore} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NombreScore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="4" width="23" height="12" uuid="4524c3f6-ea0a-4746-a3e1-4ec69ba14ea9">
+					<printWhenExpression><![CDATA[$F{FICOscore} != null && $F{NombreScore} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["®"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="62">
+			<staticText>
+				<reportElement style="Font" x="0" y="0" width="270" height="15" isRemoveLineWhenBlank="true" uuid="f6194595-a5fe-4444-8c26-30f8ccd181c1">
+					<printWhenExpression><![CDATA[$F{MensajePld} != null && $F{MensajePld}.booleanValue()]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLD Check]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="15" width="270" height="39" isRemoveLineWhenBlank="true" uuid="f2c92cc8-aad1-44be-801c-3a4af9791d62">
+					<printWhenExpression><![CDATA[$F{MensajePld} != null && $F{MensajePld}.booleanValue()]]></printWhenExpression>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{Mensaje})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportPLDcheck.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="62">
+			<printWhenExpression><![CDATA[$F{DomicilioInd} != null && !$F{DomicilioInd}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement style="Font" x="0" y="0" width="270" height="15" isRemoveLineWhenBlank="true" uuid="443a0d07-5845-4baf-955b-77154ce0a9bf"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Domicilios]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="1" y="15" width="270" height="39" uuid="26415275-1454-4260-814b-3dec43e42a13"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{DomicilioInd})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportDomicilios.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="62">
+			<printWhenExpression><![CDATA[$F{EmpleosInd} != null && !$F{EmpleosInd}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement style="Font" x="0" y="0" width="270" height="15" uuid="d18ca0ae-9ec7-4b02-b8bf-6b0944b9b4ef"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empleos]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="15" width="270" height="39" uuid="4a4c4ccb-4445-42e1-87bb-cc209751cb79"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{EmpleosInd})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportEmpleos.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="62">
+			<printWhenExpression><![CDATA[$F{ResumenProductoInd} != null && !$F{ResumenProductoInd}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement style="Font" x="0" y="0" width="270" height="15" isRemoveLineWhenBlank="true" uuid="379441bc-0d4f-4b89-927a-27a134a8aa1f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Resumen por Producto]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="15" width="270" height="39" uuid="fa8f85e0-b131-4c3c-962b-d38ee71206a6"/>
+				<subreportParameter name="imagenNegativo">
+					<subreportParameterExpression><![CDATA[$P{imagenNegativo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenPositivo">
+					<subreportParameterExpression><![CDATA[$P{imagenPositivo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenTacometro">
+					<subreportParameterExpression><![CDATA[$P{imagenTacometro}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenLogo">
+					<subreportParameterExpression><![CDATA[$P{imagenLogo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenCerrada">
+					<subreportParameterExpression><![CDATA[$P{imagenCerrada}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="subrepPath">
+					<subreportParameterExpression><![CDATA[$P{subrepPath}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{ResumenProductoInd})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportResumenProductos.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="62" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{IndicadoresInd} != null && !$F{IndicadoresInd}.isEmpty()]]></printWhenExpression>
+			<subreport>
+				<reportElement x="1" y="3" width="270" height="54" isRemoveLineWhenBlank="true" uuid="371d5ed2-299d-48c5-a3db-ab61c5f1630e"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{IndicadoresInd})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportIndicadores.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="62">
+			<printWhenExpression><![CDATA[$F{DetalleInd}]]></printWhenExpression>
+			<staticText>
+				<reportElement style="Font" x="0" y="0" width="270" height="15" isRemoveLineWhenBlank="true" uuid="a299ca64-257e-4f36-a358-6a4a8dbfecae"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Detalle de Cuentas]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="15" width="270" height="39" uuid="8aecc99a-193b-4ece-8102-191cb7731a83"/>
+				<subreportParameter name="imagenNegativo">
+					<subreportParameterExpression><![CDATA[$P{imagenNegativo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenPositivo">
+					<subreportParameterExpression><![CDATA[$P{imagenPositivo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenTacometro">
+					<subreportParameterExpression><![CDATA[$P{imagenTacometro}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenLogo">
+					<subreportParameterExpression><![CDATA[$P{imagenLogo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenCerrada">
+					<subreportParameterExpression><![CDATA[$P{imagenCerrada}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="subrepPath">
+					<subreportParameterExpression><![CDATA[$P{subrepPath}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{Cuentas})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportDetalleCuentas.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="62">
+			<printWhenExpression><![CDATA[$F{EmpresarialInd}]]></printWhenExpression>
+			<staticText>
+				<reportElement style="Font" x="0" y="0" width="270" height="15" uuid="049d01a7-2a0d-48bb-85ec-990b65535987"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Detalle de Cuentas de Actividad Empresarial]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="15" width="270" height="39" uuid="7b57252e-f62c-4515-91bc-658b64b20982"/>
+				<subreportParameter name="imagenNegativo">
+					<subreportParameterExpression><![CDATA[$P{imagenNegativo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenPositivo">
+					<subreportParameterExpression><![CDATA[$P{imagenPositivo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenTacometro">
+					<subreportParameterExpression><![CDATA[$P{imagenTacometro}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenLogo">
+					<subreportParameterExpression><![CDATA[$P{imagenLogo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenCerrada">
+					<subreportParameterExpression><![CDATA[$P{imagenCerrada}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="subrepPath">
+					<subreportParameterExpression><![CDATA[$P{subrepPath}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{Cuentas})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportDetalleCuentasActEmp.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="63">
+			<printWhenExpression><![CDATA[$F{CanInd} != null && !$F{CanInd}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement style="Font" mode="Transparent" x="0" y="0" width="356" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="2d2d748f-3a8f-4c0c-b849-96d58c2394e5"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Arial" size="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Detalles de Cuentas CAN (Créditos Asociados a Nómina)]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="16" width="270" height="39" uuid="d75b8db7-9a2a-4505-94c4-4feb1fc956f6"/>
+				<subreportParameter name="imagenNegativo">
+					<subreportParameterExpression><![CDATA[$P{imagenNegativo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenPositivo">
+					<subreportParameterExpression><![CDATA[$P{imagenPositivo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenTacometro">
+					<subreportParameterExpression><![CDATA[$P{imagenTacometro}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenLogo">
+					<subreportParameterExpression><![CDATA[$P{imagenLogo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="imagenCerrada">
+					<subreportParameterExpression><![CDATA[$P{imagenCerrada}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="subrepPath">
+					<subreportParameterExpression><![CDATA[$P{subrepPath}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{CanInd})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportDetalleCuentasCAN.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="62" splitType="Prevent">
+			<printWhenExpression><![CDATA[$F{ConsultasInd} != null && !$F{ConsultasInd}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement style="Font" x="0" y="0" width="270" height="15" isRemoveLineWhenBlank="true" uuid="1a6c3930-3d72-4113-9466-95d4267c1fea"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Consultas Realizadas]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="15" width="270" height="39" uuid="7564cc0f-2e8d-4755-9144-7f324e100ca2"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{ConsultasInd})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subrepPath}+"rcc_subreportConsultasRealizadas.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="76">
+			<printWhenExpression><![CDATA[!($F{RazonScore} == null && $F{Razon2Score} == null && $F{Razon3Score} == null && $F{Razon4Score} == null)]]></printWhenExpression>
+			<staticText>
+				<reportElement x="1" y="0" width="120" height="8" uuid="5092b626-596f-4e3e-a403-c8da3ed19873"/>
+				<textElement>
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Descripción de las Razones de Score:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="14" width="590" height="8" uuid="bcecbd25-760a-4d72-a86f-95c6fc4b1f5d">
+					<printWhenExpression><![CDATA[$F{RazonScore} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RazonScore} + " - " + $F{DescRazon1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="22" width="590" height="8" uuid="ec03bc3c-059f-4ae4-85bc-ec8c25057c9b">
+					<printWhenExpression><![CDATA[$F{Razon2Score} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Razon2Score} + " - " + $F{DescRazon2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="30" width="590" height="8" uuid="f7118e0a-95ac-4515-85ca-649e4086f049">
+					<printWhenExpression><![CDATA[$F{Razon3Score} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Razon3Score} + " - " + $F{DescRazon3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="38" width="590" height="8" uuid="58c1eb2c-e50e-4bfb-b8ba-a272c7ff2a87">
+					<printWhenExpression><![CDATA[$F{Razon4Score} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Razon4Score} + " - " + $F{DescRazon4}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="76">
+			<frame>
+				<reportElement x="0" y="0" width="591" height="71" uuid="7761fc6c-b5b6-4445-aef0-4eb65cd7b070"/>
+				<staticText>
+					<reportElement style="Font_3" stretchType="RelativeToBandHeight" x="0" y="0" width="591" height="15" uuid="251cf025-3bcd-413f-86e2-1246af6f2aa6"/>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="9" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<text><![CDATA[SIN VALOR EN JUICIO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Font_3" stretchType="RelativeToBandHeight" x="0" y="20" width="591" height="12" uuid="9a6c5382-0c97-4b25-831d-48a196abf6cb"/>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="9" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<text><![CDATA[Derechos Reservados y propiedad de Círculo de Crédito, S.A. de C.V., 2014
+
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Font_3" stretchType="RelativeToBandHeight" x="0" y="31" width="591" height="15" uuid="bf465ada-f764-477a-a204-45e5a6bece74"/>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="9" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<text><![CDATA[Para cualquier duda o aclaración comuníquese con nosotros al teléfono (55) 5166-2455]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Font_3" stretchType="RelativeToBandHeight" x="0" y="51" width="591" height="15" uuid="e8d19bd2-562e-446b-8fcc-bd9db4319e6a"/>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="9" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<text><![CDATA[FIN DEL REPORTE]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="22">
+			<staticText>
+				<reportElement style="Font_1" x="1" y="5" width="90" height="13" uuid="d365efe4-ff00-4c8e-bf24-593459feae90"/>
+				<text><![CDATA[www.circulodecredito.com.mx]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Font_1" x="512" y="0" width="80" height="18" uuid="0bfe1ae4-47a9-4a06-a463-61db0d86e6b9"/>
+				<text><![CDATA[Call Center (55) 51 66-2455 Interior 01800-888-2472856]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
