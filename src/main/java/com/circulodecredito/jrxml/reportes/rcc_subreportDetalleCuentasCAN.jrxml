@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rcc_subreportDetalleCuentasCAN" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="fc1a4229-890d-4d29-aa11-fef843c36e32">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="identiicadorCan" class="java.lang.String">
+		<fieldDescription><![CDATA[identiicadorCan]]></fieldDescription>
+	</field>
+	<field name="prelacionOrigen" class="java.lang.String">
+		<fieldDescription><![CDATA[prelacionOrigen]]></fieldDescription>
+	</field>
+	<field name="prelacionAnual" class="java.lang.String">
+		<fieldDescription><![CDATA[prelacionAnual]]></fieldDescription>
+	</field>
+	<field name="fechaAperturaCan" class="java.lang.String">
+		<fieldDescription><![CDATA[fechaAperturaCan]]></fieldDescription>
+	</field>
+	<field name="fechaCancelacionCan" class="java.lang.String">
+		<fieldDescription><![CDATA[fechaCancelacionCan]]></fieldDescription>
+	</field>
+	<field name="historicoCan" class="java.lang.String">
+		<fieldDescription><![CDATA[historicoCan]]></fieldDescription>
+	</field>
+	<field name="fechaMRCAN" class="java.lang.String">
+		<fieldDescription><![CDATA[fechaMRCAN]]></fieldDescription>
+	</field>
+	<field name="fechaMACAN" class="java.lang.String">
+		<fieldDescription><![CDATA[fechaMACAN]]></fieldDescription>
+	</field>
+	<field name="noCredito" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noCredito]]></fieldDescription>
+	</field>
+	<field name="productoResponsabiliad" class="java.lang.String">
+		<fieldDescription><![CDATA[productoResponsabiliad]]></fieldDescription>
+	</field>
+	<field name="credito" class="java.lang.String">
+		<fieldDescription><![CDATA[credito]]></fieldDescription>
+	</field>
+	<field name="otorgante" class="java.lang.String">
+		<fieldDescription><![CDATA[otorgante]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<frame>
+				<reportElement x="1" y="0" width="591" height="29" uuid="c5606a0f-e2a9-448a-befc-e25175c706b2"/>
+				<staticText>
+					<reportElement mode="Transparent" x="0" y="1" width="213" height="11" forecolor="#000000" backcolor="#FFFFFF" uuid="f8ccaf5d-806d-4f62-b4bf-6a1824251e1b"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Arial" size="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Descripción]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="214" y="1" width="65" height="11" uuid="914b01eb-5a26-4d21-a6c7-d05fd2d6684c"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Prelación]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="282" y="1" width="107" height="11" uuid="638492cb-b8ab-404e-b724-71c187628390"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fechas CAN [dd/mmm/aa]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="27" y="13" width="73" height="15" uuid="091ce710-6809-40f9-9f19-ffd4d483def5"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Producto Responsabilidad]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="101" y="13" width="42" height="15" uuid="ba53f873-a2a8-488b-9441-69da4afa3d94"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Crédito]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="145" y="13" width="35" height="15" uuid="fc837690-d9e8-4368-bb09-7e1b1a068bf3"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Otorgante]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="181" y="13" width="32" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="21e02aed-3f7f-46da-b072-6905739e0643"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Arial" size="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Estatus]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="13" width="26" height="15" uuid="35dec576-0fc0-4603-95a2-d6fa9728e327"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[No. Crédito]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="214" y="13" width="32" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="8fe5952d-d742-4261-9660-251965cb0dd7"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Arial" size="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Origen]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="248" y="13" width="32" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="31740317-6c79-4903-ae99-88a0607eaedd"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Arial" size="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Actual]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="281" y="13" width="32" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="f818a5b8-6319-4f27-b3aa-1abd34d6df33"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Arial" size="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Alta]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="315" y="13" width="37" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="3f2b432f-1e72-4c52-adea-eb555a15816a"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Arial" size="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Cancelación]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="353" y="13" width="36" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="66b7ffbc-bfc2-4657-bec7-73bd30743d2e"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Arial" size="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Última vez reportado]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="391" y="13" width="199" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="cb7a6b53-cc65-46dc-9898-9fc105b75e06"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Arial" size="6" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Estatus CAN de los últimos 36 meses]]></text>
+				</staticText>
+			</frame>
+			<line>
+				<reportElement x="0" y="0" width="1" height="13" uuid="76a4b5aa-72af-4b10-b14d-e6f66c8336cb"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement mode="Opaque" x="0" y="0" width="592" height="1" forecolor="#006699" uuid="5404ef81-ed6d-4b3a-b44e-ec9ed3992446"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="591" y="0" width="1" height="13" uuid="2318297f-7727-4c0f-8f19-05f6fc15ccc2"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="12" width="592" height="1" forecolor="#006699" uuid="16022dde-3956-43a7-a3f9-fd83ad148bd8"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="281" y="13" width="1" height="16" uuid="120e409c-68bd-4d59-915b-f5727860807a"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="214" y="0" width="1" height="13" uuid="8e7ec36e-a1b9-43b9-a04b-109a1a49df2f"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="214" y="13" width="1" height="17" uuid="48ce51da-e8fd-49b4-bbad-1fc9a746eac7"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="29" width="592" height="1" forecolor="#006699" uuid="6f3ee7be-0f9e-4b7b-b854-fa2700e6d315"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="13" width="1" height="17" uuid="dd3d9e58-f4ab-411f-94ec-738840f8b8dd"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="27" y="12" width="1" height="18" uuid="4bf1f212-f6fc-4a99-b0dc-593c8692fa71"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="101" y="12" width="1" height="18" uuid="29a2ad58-ad2b-4629-b013-2fa31cf8dcc9"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="144" y="12" width="1" height="18" uuid="7bb7a7cc-69d9-4e92-9bcc-9491a9a39f38"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="181" y="12" width="1" height="18" uuid="4343d2c8-8ab5-44d2-9645-07b188380a36"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="281" y="0" width="1" height="13" uuid="6f18bc73-1e6c-44e9-a615-2127863d03be"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="391" y="0" width="1" height="13" uuid="5fcc5ead-0a77-4077-9b69-ad2b64cca013"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="391" y="13" width="1" height="16" uuid="dffec649-2d92-41ff-8152-4868def59563"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="247" y="12" width="1" height="17" uuid="554e1591-7e58-4133-beea-b74208edd497"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="591" y="13" width="1" height="17" uuid="9ca18f7f-aa97-4417-a334-64ac0f9077ff"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="315" y="12" width="1" height="17" uuid="96efa919-ea92-4562-a581-4b20a66462f5"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="353" y="13" width="1" height="17" uuid="716ef175-113a-4a04-aa53-a18ac7c425df"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="-1" width="591" height="23" uuid="c170efec-3618-4f22-906d-64085e8ce9b7"/>
+				<textField pattern="" isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="28" y="1" width="73" height="21" forecolor="#1C2A39" backcolor="#E0E0E0" uuid="e54a06dd-a7b8-4d4d-b92f-506aeffd26aa"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="SansSerif" size="5" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{productoResponsabiliad}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="27" y="0" width="1" height="23" uuid="497782f0-0543-44bb-a3b5-006bea7e0301"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="144" y="0" width="1" height="23" uuid="310d9f30-f440-438a-b17f-1d62cb82acaf"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="181" y="0" width="1" height="23" uuid="1fa6a84d-9d8b-4fb8-92c7-d4b039258375"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="214" y="0" width="1" height="23" uuid="7ca6019b-4be7-496b-a000-52117a9d0dfa"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="247" y="0" width="1" height="23" uuid="6410e20d-7c5e-4bc3-8a0b-90fbd8f36f6f"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="281" y="0" width="1" height="23" uuid="4616763a-fcf2-4042-b443-1c3cc671a9c6"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="315" y="0" width="1" height="23" uuid="693098bf-4c64-45d1-8702-553d139e53f5"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="353" y="0" width="1" height="23" uuid="36f3c2e0-abc3-4584-aefc-07ec363330eb"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="391" y="0" width="1" height="23" uuid="c6336299-cdfd-4c26-b720-51b5a7d7355e"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="0" y="0" width="1" height="23" uuid="8cb300fe-38c2-4531-966d-1693f1894bb5"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="101" y="0" width="1" height="23" uuid="5aa9c677-81c1-4b7c-a9d6-66684d0ab542"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#006699"/>
+					</graphicElement>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement x="1" y="1" width="26" height="21" uuid="bf30ed84-5687-4af7-972e-1f23dde7cd65"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{noCredito}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="1" width="35" height="21" uuid="c2f11ce1-3dfb-429e-948c-91cc85733360"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{otorgante}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="392" y="2" width="199" height="20" uuid="c46f64d7-7984-4242-92a8-a34de5395d33"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{historicoCan}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="182" y="1" width="32" height="21" uuid="fa22641e-2a71-44b3-b8ec-fa274858eda9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{identiicadorCan}.toUpperCase()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="355" y="2" width="36" height="20" uuid="951b8525-93c8-40cd-ba52-ddb8503a29ee"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fechaMRCAN}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="316" y="1" width="37" height="21" uuid="369ad477-b35a-4467-934f-9e3e21b556fc"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fechaCancelacionCan}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="249" y="1" width="32" height="21" uuid="8523e48e-9262-49af-90f9-9c5eaa8f2a3b"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="SansSerif" size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{prelacionAnual}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="282" y="1" width="32" height="21" uuid="2805eb2a-3804-4d6b-8160-e0452559c62e"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fechaAperturaCan}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="102" y="1" width="42" height="21" uuid="3a3f9bdf-0c6b-4d3b-9ec1-83bd5a4f8ca9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{credito}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="215" y="1" width="32" height="21" uuid="56d6b108-a071-4f23-a01e-d9e4d25321d9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{prelacionOrigen}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<line>
+				<reportElement x="591" y="0" width="1" height="22" uuid="5cb991df-979d-4c90-959f-ba867919804b"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="21" width="592" height="1" forecolor="#006699" uuid="d2b3d156-1dfa-4272-a298-a1f63d957444"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#006699"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+</jasperReport>
